@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:live_schdlue_app/DateBlockCondenser.dart';
 import 'package:live_schdlue_app/StationSelectWidget.dart';
 
 void main() => runApp(new MyApp());
@@ -79,6 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     // TODO: implement initState
     _pageController = new PageController(initialPage: _currentTabIndex);
+
+
+    DateBlockCondenser dbc = new DateBlockCondenser();
+    dbc.test();
+
     super.initState();
   }
 
